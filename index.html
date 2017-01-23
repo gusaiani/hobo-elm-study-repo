@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HOBO: Highly Opinionated Budget Organizer</title>
+
+  <meta name="description" content="Very small and very fast online app to manage your family budget">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F7C723">
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <script src="//code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a class="none block-tablet" href="https://github.com/aspushkinus/hobo-elm"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+  <div id="fblogin" style="display:none" class="container">
+    <div class="clear col-12 mt1">
+      <h1>Welcome to HOBO!</h1>
+
+      <p>
+        <span class="abbr">HOBO</span> = <u>Highly Opinionated</u> Budget Organizer
+      </p>
+
+      <p>
+        <img class="img-fluid" src="/img/hobo.jpg" title="Hobo : highly opinionated budget organizer" alt="Hobo" />
+      </p>
+
+      <p>
+        <fb:login-button scope="public_profile,email"
+                         onlogin="checkLoginState();"
+                         data-size="xlarge">
+        </fb:login-button>
+      </p>
+    </div>
+  </div>
+
+  <div id="main"></div>
+
+  <!-- Alex: Temporarily disapled because it overlays on top of content. -->
+  <!-- <footer class="footer">
+    <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/aspushkinus/hobo-elm">Fork me on Github</a>
+  </footer> -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-78702396-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
